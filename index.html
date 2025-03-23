@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoriQ - Study Smarter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>MemoriQ</h1>
+        <p>Study smarter with flashcards, notes, and more!</p>
+    </header>
+
+    <main>
+        <!-- Flashcard Section -->
+        <section id="flashcards">
+            <h2>Flashcards</h2>
+            <div id="flashcard-container"></div>
+            <input type="text" id="question" placeholder="Enter Question">
+            <input type="text" id="answer" placeholder="Enter Answer">
+            <button onclick="addFlashcard()">Add Flashcard</button>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <h2>Notes</h2>
+            <textarea id="note-text" placeholder="Write your notes here..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <div id="saved-notes"></div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <input type="text" id="feedback-text" placeholder="Enter your feedback">
+            <button onclick="submitFeedback()">Submit</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
